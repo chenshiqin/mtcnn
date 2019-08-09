@@ -36,7 +36,7 @@ if __name__ == '__main__':
         exit(ret)
     print('done')
 
-    img = cv2.imread('./test2-1.jpg')
+    img = cv2.imread('./rnet-24_24_1.jpg')
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     img = cv2.resize(img, (24,24)) # default is bilinear
     img = np.swapaxes(img, 0, 2)
